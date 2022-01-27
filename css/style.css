@@ -1,0 +1,1380 @@
+/*==============================
+      Common css start          
+ ===============================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background: #282828;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+
+.title h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 0px;
+    color: #d6c6b2;
+    text-align: center;
+
+}
+
+.title h1::first-letter {
+    text-transform: uppercase;
+}
+
+/*==============================
+      Common css end          
+ ===============================*/
+
+/*==============================
+      Nav-part css start          
+ ===============================*/
+
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav .logo {
+    width: 20%;
+    margin-top: 18px;
+}
+
+nav .manu {
+    width: 80%;
+    text-align: right;
+}
+
+nav .manu ul li {
+    display: inline-block;
+}
+
+nav .manu ul li a {
+    display: inline-block;
+    background: transparent;
+    color: #ffffff;
+    padding: 50px 10px 10px 10px;
+    transition: .5s;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+nav .manu ul li .stile {
+    position: relative;
+    margin-left: 25px;
+}
+
+nav .manu ul li .stile .overlay {
+    width: 100%;
+    height: 100%;
+    background: #d6c6b2;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: .5s;
+    z-index: -2;
+}
+
+nav .manu ul li .stile:hover .overlay,
+a {
+    top: 0%;
+}
+
+nav .manu ul li .stile:hover a {
+    color: #222222;
+}
+
+nav .manu ul li .active a {
+    background: #d6c6b2 !important;
+    color: #222222 !important;
+}
+
+/*==============================
+      Nav-part css end          
+ ===============================*/
+
+/*==============================
+      Banner-part css start          
+ ===============================*/
+
+
+#banner-part {
+    background: #040309;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#banner-part .image img {
+    margin-left: 270px;
+    margin-bottom: -4px;
+}
+
+#banner-part .jamela {
+    position: relative;
+}
+
+#banner-part .jamela .text {
+    text-align: right;
+    position: absolute;
+    top: 247px;
+    right: 197px;
+}
+
+#banner-part .text h5 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+#banner-part .text {
+    position: relative;
+}
+
+#banner-part .text h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 102px;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+}
+
+#banner-part .text h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 85px;
+    color: #fff;
+    padding-top: 80px;
+}
+
+#banner-part .overlay {
+    width: 40%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#banner-part .button {
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+}
+
+#banner-part .button {
+    display: inline-block
+}
+
+#banner-part .button .exp {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 14px 19px;
+    border: 1px solid #d6c6b2;
+    background: transparent;
+    color: #d6c6b2;
+    margin-right: 25px;
+    transition: .6s;
+}
+
+#banner-part .button .exp:hover {
+    border-color: #d6c6b2;
+    background: #d6c6b2;
+    color: #222222;
+}
+
+#banner-part .button .hire {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 14px 36px;
+    border: 1px solid #d6c6b2;
+    background: #d6c6b2;
+    color: #222222;
+    transition: .6s;
+}
+
+#banner-part .button .hire:hover {
+    background: transparent;
+    border-color: #d6c6b2;
+    color: #d6c6b2;
+}
+
+/*==============================
+      Banner-part css end          
+ ===============================*/
+
+/*==============================
+      About-part css start          
+ ===============================*/
+
+
+#about {
+    background-color: #282828;
+    padding-top: 108px;
+    padding-bottom: 100px;
+}
+
+#about .about-main {
+    display: flex;
+}
+
+#about .about-image {
+    width: 40%;
+}
+
+#about .about-image img {
+    width: 470px;
+    height: 520px;
+}
+
+#about .about-text {
+    width: 60%;
+}
+
+#about .about-text h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    color: #d6c6b2;
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 28px;
+}
+
+#about .about-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-right: 120px;
+}
+
+#about .about-bottom h4 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    color: #d6c6b2;
+    padding-top: 50px;
+}
+
+#about .about-bottom .about-icon {
+    padding-top: 29px;
+}
+
+#about .about-bottom .about-icon i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 18px;
+    transition: all linear 0.4s;
+    box-sizing: border-box;
+}
+
+#about .about-bottom .about-icon i:hover {
+    background-color: #d6c6b2;
+    color: #222;
+    border: 1px solid #d6c6b2;
+}
+
+
+/*==============================
+      About-part css end          
+ ===============================*/
+
+
+
+/*===================	
+servic-part css start
+====================*/
+
+#servic-part {
+    background: #2a2a30;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#servic-part .servic-slider {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+}
+
+#servic-part .servic-slider .item {
+    width: 33%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#servic-part .servic-slider .item img {
+    display: inline-block;
+}
+
+#servic-part .servic-slider .item h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d4d4d5;
+    margin: 30px 0px;
+}
+
+#servic-part .servic-slider .item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #b3b3b4;
+    box-sizing: border-box;
+    width: 357px;
+    line-height: 20px;
+    margin: 0 auto;
+}
+
+
+#servic-part .prev {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: -33%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    line-height: 25px;
+    border: 1px solid #fff;
+    transition: .5s;
+}
+
+#servic-part .prev:hover {
+    background: #d6c6b2;
+    border: 1px solid #d6c6b2;
+}
+
+#servic-part .prev::before {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    cursor: '';
+}
+
+#servic-part .next {
+
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: -33%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    line-height: 25px;
+    border: 1px solid #fff;
+    transform: .5s;
+}
+
+#servic-part .next::before {
+    position: absolute;
+    right: -50%;
+    top: 0;
+    cursor: '';
+}
+
+#servic-part .next:hover {
+    background: #d6c6b2;
+    border: 1px solid #d6c6b2;
+}
+
+
+/*=================
+servic-part css end
+==================*/
+
+
+
+/*===================
+ portflo-part start
+ ====================*/
+#portflo-part {
+    background: #282828;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#portflo-part .main {
+    justify-content: space-between;
+}
+
+#portflo-part .portflo-imge {
+    width: 65%;
+
+}
+
+#portflo-part .portflo-imge .main {
+    flex-wrap: wrap;
+}
+
+#portflo-part .portflo-imge .item {
+    width: 370px;
+    background: #d9bfbf;
+    margin: 29px;
+    position: relative;
+}
+
+#portflo-part .portflo-imge .item img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#portflo-part .portflo-imge .item .overlay {
+    height: 100%;
+    width: 0%;
+    background: rgba(214, 198, 178, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    opacity: 0;
+    text-align: center;
+}
+
+#portflo-part .portflo-imge .item:hover .overlay {
+    width: 100%;
+    opacity: 1;
+}
+
+#portflo-part .portflo-imge .item .overlay i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #444444;
+    color: #fff;
+    line-height: 50px;
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+#portflo-part .portflo-imge .item .overlay h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 120px;
+    color: #222222;
+}
+
+#portflo-part .portflo-imge .item .overlay h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+}
+
+#portflo-part .portflo-text {
+    width: 31%;
+
+}
+
+#portflo-part .portflo-text .title h1 {
+    text-align: inherit;
+    margin-top: 3px;
+    padding-bottom: 15px;
+}
+
+#portflo-part .portflo-text ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 45px;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+    display: table;
+}
+
+
+#portflo-part .mixitup-control-active {
+    margin-left: 35px;
+    color: #d6c6b2 !important;
+}
+
+
+#portflo-part .portflo-text ul li:hover {
+    color: #d6c6b2;
+}
+
+
+#portflo-part .button {
+    text-align: center;
+    margin-top: 60px;
+    margin-right: 460px;
+}
+
+#portflo-part .button a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid #d6c6b2;
+    color: #222;
+    background: #d6c6b2;
+}
+
+
+#portflo-part .button {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#portflo-part .button a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid #d6c6b2;
+    color: #222;
+    background: #d6c6b2;
+}
+
+
+/*====================
+portflo part css end
+======================*/
+
+
+
+/*=============================
+   Testimonial-part css start
+===============================*/
+#Testimonial-part {
+    background: url(../images/testimonial.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#Testimonial-part .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding-bottom: 150px;
+}
+
+#Testimonial-part .overlay .title {
+    padding: 60px 0px;
+}
+
+#Testimonial-part .Testimonial-slider .item {
+    width: 45%;
+    justify-content: space-between;
+}
+
+#Testimonial-part .Testimonial-slider .item .img {
+    width: 30%;
+}
+
+#Testimonial-part .Testimonial-slider .item .img img {}
+
+#Testimonial-part .Testimonial-slider .item .text {
+    color: #fff;
+    width: 70%;
+    margin-top: 12px;
+    margin-left: 30px;
+
+}
+
+#Testimonial-part .Testimonial-slider .item .text h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+#Testimonial-part .Testimonial-slider .item .text h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#Testimonial-part .Testimonial-slider .item .text i {
+    font-size: 16px;
+    margin-top: 13px;
+    color: #fff;
+
+}
+
+#Testimonial-part .Testimonial-slider .item .text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 25px;
+    width: 359px;
+}
+
+
+
+#Testimonial-part .prev {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: -33%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    line-height: 25px;
+    border: 1px solid #fff;
+    transition: .5s;
+}
+
+#Testimonial-part .prev:hover {
+    background: #d6c6b2;
+    border: 1px solid #d6c6b2;
+}
+
+#Testimonial-part .prev::before {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    cursor: '';
+}
+
+#Testimonial-part .next {
+
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: -33%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    line-height: 25px;
+    border: 1px solid #fff;
+    transform: .5s;
+}
+
+#Testimonial-part .next::before {
+    position: absolute;
+    right: -50%;
+    top: 0;
+    cursor: '';
+}
+
+#Testimonial-part .next:hover {
+    background: #d6c6b2;
+    border: 1px solid #d6c6b2;
+}
+
+
+
+/*==============================
+    Testimonial-part css end
+================================*/
+
+
+
+
+/*==============================
+      Pricing-part css start          
+ ===============================*/
+
+#pricing {
+    padding-top: 100px;
+    padding-bottom: 109px;
+    background-color: #282828;
+}
+
+#pricing .pricing-head {
+    text-align: center;
+}
+
+#pricing .pricing-head h3 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 400;
+    color: #d6c6b2;
+    padding-bottom: 58px;
+}
+
+#pricing .pricing-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing .pricing-item {
+    width: 32%;
+    background-color: #333;
+    padding-bottom: 50px;
+    transition: all linear 0.4s;
+}
+
+#pricing .pricing-item:hover {
+    background-color: #d6c6b2;
+}
+
+#pricing .pricing-item:hover h3 {
+    box-shadow: 0px 0.1px 17px #33333329;
+}
+
+#pricing .pricing-item h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    background-color: #d6c6b2;
+    text-align: center;
+    line-height: 55px;
+    transition: all linear 0.4s;
+}
+
+#pricing .pricing-item .pricing-img {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#pricing .pricing-item .pricing-img img {
+    width: 74px;
+    height: 92px;
+}
+
+#pricing .pricing-item .pricing-price {
+    text-align: center;
+}
+
+#pricing .pricing-item .pricing-price h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 10px;
+    transition: all linear 0.4s;
+}
+
+#pricing .pricing-item:hover .pricing-price h4 {
+    color: #000;
+}
+
+#pricing .pricing-item .pricing-price h4 span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 24px;
+    transition: all linear 0.4s;
+}
+
+#pricing .pricing-item:hover .pricing-price h4 span {
+    color: #000;
+}
+
+#pricing .pricing-item:hover .pricing-price hr {
+    background-color: #c7b9a7;
+}
+
+#pricing .pricing-item .pricing-price hr {
+    width: 60%;
+    margin: 0 auto;
+    border: 0;
+    height: 1px;
+    background-color: #444240;
+    transition: all linear 0.4s;
+}
+
+#pricing .pricing-item .pricing-para p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 29px;
+    transition: all linear 0.4s;
+}
+
+#pricing .pricing-item:hover .pricing-para p {
+    color: #444;
+}
+
+#pricing .pricing-item .pricing-button {
+    text-align: center;
+    padding-top: 45px;
+}
+
+#pricing .pricing-item:hover .pricing-button a {
+    color: #000;
+    background-color: #c7b9a7;
+    border: 1px solid #c7b9a7;
+    box-shadow: 1px 1px 5px #4442404f;
+}
+
+#pricing .pricing-item .pricing-button a {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    transition: all linear 0.4s;
+}
+
+
+/*==============================
+      Pricing-part css end          
+ ===============================*/
+
+/*==============================
+      Blog-part css start          
+ ===============================*/
+
+
+#blog-part {
+    background: #333333;
+    padding: 100px 0;
+}
+
+#blog-part .main {
+    justify-content: space-between;
+}
+
+#blog-part .blog-head {
+    text-align: center;
+}
+
+#blog-part .blog-head h3 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 400;
+    color: #d6c6b2;
+    padding-bottom: 58px;
+}
+
+#blog-part .left-up {
+    box-sizing: border-box;
+}
+
+#blog-part .left-up .image img {
+    height: 100%;
+}
+
+#blog-part .blog-admin {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6e6e6e;
+}
+
+#blog-part a,
+i {
+    color: #6e6e6e;
+}
+
+#blog-part .move {
+    margin-left: 67px;
+}
+
+#blog-part .gape {
+    margin: 0 10px;
+}
+
+#blog-part .left-blog .text h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d6c6b2;
+    width: 330px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+#blog-part .left-blog p {
+    width: 340px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #a3a3a3;
+    margin-bottom: 20px;
+
+}
+
+#blog-part .left-blog .down a {
+    color: #d6c6b2;
+}
+
+#blog-part .left-blog .down i {
+    color: #d6c6b2;
+}
+
+#blog-part .left-blog .down .share-icon {
+    margin-left: 228px;
+}
+
+#blog-part .left-blog {
+    width: 55%;
+}
+
+#blog-part .left-blog .left-up {
+    display: flex;
+    background: #282828;
+    margin-bottom: 40px;
+}
+
+#blog-part .left-blog .left-up .text {
+    margin: 40px;
+}
+
+#blog-part .left-blog .image {
+    position: relative;
+}
+
+#blog-part .left-blog .image .overlay {
+    width: 106%;
+    height: 100%;
+    background: rgba(214, 198, 178, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: .8s;
+}
+
+#blog-part .left-blog .image .overlay .date {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    margin: 20px;
+}
+
+#blog-part .left-blog .left-up:hover .image .overlay {
+    opacity: 1;
+}
+
+#blog-part .left-blog .left-up:hover .image .overlay date {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#blog-part .right-blog {
+    width: 42%;
+    background: #d6c6b2;
+    margin-bottom: 40px;
+}
+
+#blog-part .right-blog img {
+    width: 100%;
+}
+
+
+#blog-part .right-blog .text {
+    margin: 20px 40px;
+}
+
+#blog-part .right-blog .text .center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#blog-part .right-blog .move {
+    margin-left: 165px;
+}
+
+#blog-part .right-blog .text h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+    width: 386px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+#blog-part .right-blog p {
+    width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #444444;
+    margin-bottom: 20px;
+
+}
+
+#blog-part .right-blog .pera {
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog-part .right-blog .pera .down a {
+    color: #222222;
+}
+
+#blog-part .right-blog .pera .down i {
+    color: #222222;
+}
+
+#blog-part .right-blog .pera .up a {
+    color: #666666
+}
+
+#blog-part .right-blog .pera .up i {
+    color: #666666
+}
+
+
+#blog-part .right-blog .image {
+    position: relative;
+}
+
+#blog-part .right-blog .image .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(214, 198, 178, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: .8s;
+}
+
+#blog-part .right-blog .image .overlay .date {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    margin: 20px;
+}
+
+#blog-part .right-blog .left-up:hover .image .overlay {
+    opacity: 1;
+}
+
+#blog-part .right-blog .left-up:hover .image .overlay date {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#blog-part .button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#blog-part .button a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    color: #222222;
+    background: #d6c6b2;
+    border: 1px solid #d6c6b2;
+    transition: .6s;
+}
+
+#blog-part .button a:hover {
+    background: transparent;
+    color: #d6c6b2;
+}
+
+
+
+/*==============================
+      Blog-part css end          
+ ===============================*/
+
+
+/*==============================
+      Footer-part css start          
+ ===============================*/
+
+#footer {
+    background-color: #282828;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+#footer .footer-main {
+    display: flex;
+}
+
+#footer .footer-main .footer-right {
+    width: 70%;
+}
+
+#footer .footer-main .footer-left {
+    width: 30%;
+}
+
+#footer .footer-main .footer-head h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 400;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+#footer .footer-address {
+    display: flex;
+    transition: all linear 0.4s;
+}
+
+#footer .footer-address .footer-icon {
+    width: 10%;
+}
+
+#footer .footer-address:hover .footer-icon i {
+    color: #d6c6b2;
+}
+
+#footer .footer-address:hover .footer-add p {
+    color: #d6c6b2;
+}
+
+#footer .footer-address .footer-icon i {
+    font-size: 18px;
+    color: #ccc;
+    transition: all linear 0.4s;
+}
+
+#footer .footer-address .footer-add {
+    width: 90%;
+}
+
+#footer .footer-address .footer-add p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ccc;
+    padding-bottom: 18px;
+    transition: all linear 0.4s;
+}
+
+#footer .footer-bottom h4 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+    padding-top: 38px;
+    padding-bottom: 30px;
+}
+
+#footer .footer-bottom .footer-icon i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d6c6b2;
+    background: transparent;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    transition: all linear 0.4s;
+    border: 1px solid #282828;
+    margin-right: 7px;
+    box-sizing: border-box;
+}
+
+#footer .footer-bottom .footer-icon i:hover {
+    background-color: #d6c6b2;
+    border-color: #d6c6b2;
+}
+
+#footer .footer-right form {
+    background-color: #333333;
+}
+
+#footer .footer-right form h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+#footer .footer-right form .footer-input {
+    padding-left: 30px;
+}
+
+#footer .footer-right form .footer-input input {
+    width: 46.5%;
+    margin-right: 20px;
+    border: 1px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff;
+}
+
+#footer .footer-right form .footer-input input::placeholder {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #666666;
+}
+
+#footer .footer-right form .footer-input input:focus {
+    outline: 0;
+    border: 1px solid #d6c6b2;
+}
+
+#footer .footer-right form .footer-message {
+    padding-left: 30px;
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 26px;
+}
+
+#footer .footer-right form .footer-message textarea {
+    width: 95.7%;
+    border: 1px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff;
+    resize: none;
+    height: 168px;
+    position: relative;
+}
+
+#footer .footer-right form .footer-message textarea::placeholder {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #666666;
+}
+
+#footer .footer-right form .footer-message textarea:focus {
+    outline: 0;
+    border: 1px solid #d6c6b2;
+}
+
+#footer .footer-right form .footer-message button {
+    width: 60px;
+    height: 60px;
+    background-color: #d6c6b2;
+    outline: 0;
+    border: 0;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 54.5%;
+    right: 39px;
+}
+
+#footer .footer-right form .footer-message button i {
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 20px;
+    color: #222;
+}
+
+
+/*==============================
+      Footer-part css end          
+ ===============================*/
+
+/*==============================
+      Copyright-part css start          
+ ===============================*/
+
+#copyright {
+    background-color: #333333;
+}
+
+#copyright p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    line-height: 54px;
+    color: #ccc;
+}
+
+
+/*==============================
+      Copyright-part css end          
+ ===============================*/
